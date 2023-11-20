@@ -44,7 +44,7 @@ public class CourseController {
             LOG.error("The course was already updated, reload the record again");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("The course was already updated, reload the record again");
         } else {
-            LOG.error("The course was successfully updated");
+            LOG.error("The course was successfully updated!");
             return ResponseEntity.status(HttpStatus.OK).body("The course was successfully updated");
         }
     }
